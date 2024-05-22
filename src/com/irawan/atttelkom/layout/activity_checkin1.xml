@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/oceanblue"
+    tools:context=".checkin1">
+
+
+
+
+
+    <RelativeLayout
+
+        android:id="@+id/layer1"
+     android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<ImageView
+    android:padding="20dp"
+    android:background="@drawable/bulat2in1"
+    android:scaleType="fitXY"
+    android:src="@drawable/checkinback"
+    android:layout_width="match_parent"
+    android:layout_height="270dp"/>
+    </RelativeLayout>
+
+
+
+<RelativeLayout
+    android:layout_margin="10dp"
+    android:padding="10dp"
+    android:background="@drawable/bulat4"
+    android:layout_below="@+id/layer1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+
+<RelativeLayout
+    android:layout_marginTop="20dp"
+
+    android:id="@+id/layer2"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:textSize="25dp"
+        android:textStyle="bold"
+
+        android:gravity="center_horizontal"
+    android:id="@+id/texttglhari1"
+        android:text="Tanggal hari"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textSize="16dp"
+        android:textStyle="bold"
+
+        android:gravity="center_horizontal"
+        android:text="Jam"
+    android:layout_below="@+id/texttglhari1"
+        android:id="@+id/textjam1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:gravity="center_horizontal"
+        android:id="@+id/textmessagestep1"
+        android:layout_below="@+id/textjam1"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:text="Dimanakan Anda bekerja saat ini ?"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>
+
+
+<!--bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbButton-->
+
+
+<RelativeLayout
+    android:gravity="center_horizontal"
+    android:id="@+id/layer00"
+    android:layout_below="@+id/layer2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+
+android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:id="@+id/layer31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp">
+
+        <ImageButton
+            android:id="@+id/butstep11"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/bulat1"
+            android:padding="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_officecopy" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/butstep11"
+            android:layout_marginTop="0dp"
+            android:text="Office" />
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+android:orientation="vertical"
+android:layout_margin="10dp"
+android:gravity="center_horizontal"
+        android:layout_toRightOf="@+id/layer31"
+        android:id="@+id/layer32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <ImageButton
+
+        android:padding="5dp"
+        android:scaleType="fitXY"
+        android:background="@drawable/bulat1"
+        android:src="@drawable/icon_rumahcopy"
+        android:id="@+id/butstep12"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+
+        <TextView
+
+
+            android:text="Home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+android:orientation="vertical"
+        android:layout_margin="10dp"
+
+        android:layout_toRightOf="@+id/layer32"
+        android:id="@+id/layer33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <ImageButton
+android:padding="5dp"
+        android:scaleType="fitXY"
+        android:background="@drawable/bulat1"
+
+        android:src="@drawable/icon_satelitcopy"
+
+        android:id="@+id/butstep13"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+
+        <TextView
+            android:text="satelit"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+    <!-- bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb-->
+
+    <RelativeLayout
+      android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/layer00"
+        android:id="@+id/layer4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <Button
+        android:background="@drawable/addroundrec"
+android:padding="10dp"
+android:layout_margin="10dp"
+        android:id="@+id/butback1"
+        android:text="Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/bulat4b"
+
+        android:layout_toRightOf="@+id/butback1"
+
+        android:id="@+id/butnext1"
+        android:text="Next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
+</RelativeLayout>

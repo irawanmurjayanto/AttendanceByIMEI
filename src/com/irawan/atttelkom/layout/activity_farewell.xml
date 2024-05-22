@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical"
+    tools:context=".farewell">
+
+    <RelativeLayout
+        android:layout_margin="30dp"
+        android:background="@drawable/bulatawal"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:background="@drawable/farewell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+  android:src="@drawable/farewell2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

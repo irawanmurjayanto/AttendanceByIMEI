@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+    <item
+
+        android:id="@+id/reset"
+
+        android:orderInCategory="100"
+
+        android:title="Reset Data"
+
+        app:showAsAction="never" />
+
+
+    <item
+
+        android:id="@+id/report1"
+
+        android:orderInCategory="100"
+
+        android:title="Employee Report"
+
+        app:showAsAction="never" />
+
+    <item
+
+        android:id="@+id/admin"
+
+        android:orderInCategory="100"
+
+        android:title="Admin Control"
+
+        app:showAsAction="never" />
+
+
+
+
+
+</menu>

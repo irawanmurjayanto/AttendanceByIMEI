@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/oceanblue"
+    tools:context=".checkin1">
+
+
+    <android.support.v7.widget.Toolbar
+        android:theme="@style/MyTheme"
+        app:popupTheme="@style/MyTheme"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        app:titleTextAppearance="@style/Toolbar.TitleText"
+        />
+
+
+
+<RelativeLayout
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="20dp"
+    android:layout_below="@+id/layer1"
+    android:id="@+id/layer2"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:textSize="12dp"
+        android:textStyle="bold"
+
+        android:id="@+id/textm1"
+        android:text="Selamat beraktivitas!"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_below="@+id/textm1"
+        android:textSize="12dp"
+        android:textStyle="bold"
+
+    android:id="@+id/texttglhari1"
+        android:text="Tanggal hari"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+
+
+
+</RelativeLayout>
+
+
+<!--bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbButton-->
+
+
+<RelativeLayout
+    android:padding="5dp"
+    android:background="@drawable/bulat2"
+    android:layout_margin="10dp"
+    android:gravity="center_horizontal"
+    android:id="@+id/layer00"
+    android:layout_below="@+id/layer2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+android:padding="5dp"
+android:orientation="vertical"
+        android:layout_marginLeft="5dp"
+
+        android:id="@+id/layer31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      android:layout_margin="5dp" >
+
+        <TextView
+            android:textSize="8dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:padding="3dp"
+            android:background="@color/colorAccent"
+            android:layout_below="@+id/texttglhari1"
+            android:text="Aktivitas Anda hari ini :"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:id="@+id/edit1"
+            android:gravity="start"
+            android:textSize="10dp"
+            android:padding="10dp"
+            android:background="@drawable/bulat22"
+            android:hint="Tambah Aktivitasmu"
+            android:layout_width="300dp"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:padding="3dp"
+            android:textSize="8dp"
+            android:background="@color/colorAccent"
+            android:text="Definition of Done (DoD)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:textColor="@color/colorBlack"
+            android:id="@+id/edit2"
+            android:gravity="start"
+            android:textSize="10dp"
+            android:padding="10dp"
+            android:background="@drawable/bulat22"
+            android:hint="Definition Of Done"
+            android:layout_width="300dp"
+            android:layout_height="30dp"/>
+
+
+        <Button
+            android:id="@+id/tambah"
+ android:layout_marginTop="3dp"
+            android:textStyle="bold"
+          android:textColor="@color/colorWhite"
+            android:background="@drawable/bulat3"
+            android:padding="5dp"
+            android:textSize="8dp"
+            android:text="+ \n Tambah"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/layer34"
+        android:layout_below="@+id/layer00"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+
+            android:textSize="7dp"
+            android:layout_marginLeft="5dp"
+
+            android:id="@+id/textjudulact"
+            android:layout_below="@+id/layersign"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/bulatjudul1"
+            android:text="My Activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_below="@+id/textjudulact"
+            android:background="@drawable/bulat2"
+            android:id="@+id/bedulkubu"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:padding="5dp"
+            android:scrollbars="vertical" />
+    </RelativeLayout>
+
+
+<RelativeLayout
+    android:layout_below="@+id/layer34"
+
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Button
+        android:text="Close"
+        android:background="@drawable/bulat4b"
+        android:id="@+id/butSimpan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
+
+
+
+</RelativeLayout>

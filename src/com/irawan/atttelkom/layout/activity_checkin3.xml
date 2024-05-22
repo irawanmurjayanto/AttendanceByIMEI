@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/oceanblue"
+    android:gravity="center_vertical"
+    android:layout_gravity="center_vertical"
+    tools:context=".checkin1">
+
+
+
+
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:id="@+id/layer1"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<ImageView
+    android:background="@drawable/bulat2in1"
+    android:scaleType="fitXY"
+    android:padding="20dp"
+    android:src="@drawable/checkinback"
+    android:layout_width="match_parent"
+    android:layout_height="270dp"/>
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/bulat4"
+        android:layout_below="@+id/layer1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+    android:layout_marginTop="20dp"
+
+    android:id="@+id/layer2"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:textSize="25dp"
+        android:textStyle="bold"
+
+        android:gravity="center_horizontal"
+    android:id="@+id/texttglhari1"
+        android:text="Tanggal hari"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textSize="16dp"
+        android:textStyle="bold"
+
+        android:gravity="center_horizontal"
+        android:text="Jam"
+    android:layout_below="@+id/texttglhari1"
+        android:id="@+id/textjam1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:gravity="center_horizontal"
+        android:id="@+id/textmessagestep1"
+        android:layout_below="@+id/textjam1"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:text="Deskripsikan kondisi Anda dan keluarga hari ini ?"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>
+
+
+<!--bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbButton-->
+
+
+<RelativeLayout
+    android:layout_marginTop="10dp"
+    android:gravity="center_horizontal"
+    android:id="@+id/layer00"
+    android:layout_below="@+id/layer2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+
+android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:id="@+id/layer31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      android:layout_margin="5dp" >
+
+        <EditText
+            android:id="@+id/editkondisi"
+            android:gravity="start"
+            android:textSize="10dp"
+            android:padding="10dp"
+            android:background="@drawable/bulat2"
+            android:hint="Kondisi Keluarga baik,meminimalisir kontak diluar dan selalu rajin cuci tangan"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"/>
+    </LinearLayout>
+
+</RelativeLayout>
+    <!-- bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb-->
+
+    <RelativeLayout
+      android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/layer00"
+        android:id="@+id/layer4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <Button
+        android:background="@drawable/addroundrec"
+        android:padding="10dp"
+android:layout_margin="10dp"
+        android:id="@+id/butback1"
+        android:text="Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_margin="10dp"
+        android:background="@drawable/bulat4b"
+
+        android:layout_toRightOf="@+id/butback1"
+        android:padding="10dp"
+        android:id="@+id/butnext1"
+        android:text="Check In"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

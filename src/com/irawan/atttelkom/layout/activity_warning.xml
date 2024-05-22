@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".warning">
+
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+ <TextView
+     android:gravity="center"
+     android:id="@+id/text1"
+     android:padding="5dp"
+     android:textColor="@color/colorWhite"
+     android:background="@color/colorPOSBiru"
+     android:text="Maaf NIK Anda belum terdaftar \nMohon diulangi kembali"
+     android:textStyle="bold"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"/>
+    <ImageButton
+        android:layout_toRightOf="@+id/text1"
+        android:id="@+id/but1"
+        android:src="@drawable/close"
+        android:layout_width="20dp"
+        android:layout_height="20dp"/>
+
+</RelativeLayout>
+</LinearLayout>

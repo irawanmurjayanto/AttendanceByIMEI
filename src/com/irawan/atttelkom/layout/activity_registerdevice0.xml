@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/oceanblue"
+    tools:context=".registerdevice0">
+
+<RelativeLayout
+    android:gravity="center_vertical"
+android:layout_gravity="center_vertical"
+    android:padding="5dp"
+    android:background="@drawable/bulat2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:background="@color/colorBlack"
+        android:id="@+id/layer0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/colorWhite"
+            android:textSize="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/text1"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Device Anda belum terdaftar \nSilahkan Register terlebih dahulu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_below="@+id/layer0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_below="@+id/layer0"
+
+        android:id="@+id/layer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <ImageView
+
+        android:id="@+id/img1"
+        android:src="@drawable/registerdevice1"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/layer0"
+
+        android:layout_toRightOf="@+id/layer1"
+        android:padding="10dp"
+        android:background="@drawable/bulat2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+        <LinearLayout
+
+            android:background="@drawable/bulat2"
+
+            android:padding="5dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:textSize="10dp"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/bulatjudul1"
+                android:text="Device ID Registration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:layout_margin="5dp"
+                android:textSize="10dp"
+                android:id="@+id/editnik"
+                android:padding="10dp"
+                android:background="@drawable/bulat2"
+                android:hint="Silahkan Input NIK Anda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/bulat4b"
+                android:id="@+id/butprocess"
+                android:text="Process"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+</LinearLayout>

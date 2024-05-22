@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/oceanblue"
+    android:gravity="center_vertical"
+    android:layout_gravity="center_vertical"
+    android:padding="5dp"
+    tools:context=".MainActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:theme="@style/MyTheme"
+        app:popupTheme="@style/MyTheme"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        app:titleTextAppearance="@style/Toolbar.TitleText"
+        />
+
+
+
+
+
+    <!--                          Button Check in                          -->
+
+
+    <!--                      Photo Profile                        -->
+
+
+
+    <RelativeLayout
+        android:id="@+id/layer01"
+
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="20dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="20dp"
+        android:background="@drawable/bulatawal"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:layout_marginLeft="10dp"
+            android:id="@+id/imgprofile"
+            android:padding="5dp"
+            android:src="@drawable/sehat"
+            android:background="@drawable/bulat2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"/>
+
+
+        <TextView
+            android:layout_toRightOf="@+id/imgprofile"
+            android:id="@+id/textjabatan"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/bulat2"
+            android:padding="10dp"
+            android:text="jabatan" />
+
+
+
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/bulat2check"
+            android:id="@+id/layersign"
+            android:layout_below="@+id/imgprofile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <TextView
+       android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+
+            android:textStyle="bold"
+            android:text=""
+
+            android:id="@+id/ketsign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+
+            android:textStyle="bold"
+            android:text=""
+
+
+            android:layout_toEndOf="@+id/ketsign"
+            android:id="@+id/ketjam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+            <RelativeLayout
+                android:background="@color/colorWhite"
+                android:layout_toRightOf="@+id/ketjam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+            <ImageButton
+android:padding="5dp"
+
+                android:scaleType="fitXY"
+android:background="@color/colorWhite"
+                android:id="@+id/checkin1"
+                android:src="@drawable/checkinbt1"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"/>
+
+            <ImageButton
+                android:padding="5dp"
+                android:background="@color/colorWhite"
+                android:scaleType="fitXY"
+                android:layout_toRightOf="@+id/checkin1"
+                android:id="@+id/checkot1"
+                android:src="@drawable/checkotbt1"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"/>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+<TextView
+android:layout_marginTop="10dp"
+ android:layout_marginLeft="15dp"
+    android:layout_marginBottom="5dp"
+
+    android:id="@+id/textjudulact"
+    android:layout_below="@+id/layersign"
+    android:padding="10dp"
+    android:textStyle="bold"
+    android:textColor="@color/colorWhite"
+    android:background="@drawable/bulatjudul1"
+    android:text="My Activity"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+
+
+        <RelativeLayout
+            android:background="@drawable/bulat2"
+            android:layout_marginTop="-3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/layer34"
+            android:padding="3dp"
+            android:layout_below="@+id/textjudulact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <android.support.v7.widget.RecyclerView
+
+                android:id="@+id/bedulkubu"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:scrollbars="vertical" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@+id/layer34"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:id="@+id/butaddaktivitas"
+                android:padding="5dp"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/bulat4b"
+                android:text="Add More Acitivity"
+                android:layout_width="wrap_content"
+                android:layout_height="39dp"/>
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+    <!--                          Key Check in                          -->
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+ <TextView
+     android:text="keyin"
+     android:visibility="visible"
+     android:id="@+id/keycheckin"
+     android:layout_width="1dp"
+     android:layout_height="1dp"/>
+
+    <TextView
+        android:text="keyout"
+        android:visibility="visible"
+        android:layout_toRightOf="@+id/keycheckin"
+        android:id="@+id/keycheckout"
+        android:layout_width="1dp"
+        android:layout_height="1dp"/>
+
+    <TextView
+        android:text="deviceid"
+        android:visibility="invisible"
+        android:layout_toRightOf="@+id/keycheckout"
+        android:id="@+id/textdeviceid"
+        android:layout_width="1dp"
+        android:layout_height="1dp"/>
+
+</LinearLayout>
+
+
+
+
+</LinearLayout>
