@@ -144,7 +144,7 @@ pDialog=new ProgressDialog(this);
 
 
 
-        String url = "http://anugrahsoftware.xyz/andro/savecheckin1.php";
+        String url = http://anugrahsoftware.xyz+"andro/savecheckin1.php";
 
         pDialog.setMessage("Checking DeviceID...");
 
