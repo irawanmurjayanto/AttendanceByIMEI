@@ -225,7 +225,7 @@ dialogform(barang.getIDNO());
 
 
 
-        String url = "http://anugrahsoftware.xyz/andro/delactivity.php";
+        String url = AppConfig.IP_SERVER+"andro/delactivity.php";
 
         pDialog.setMessage("Saving Data...");
 
@@ -468,8 +468,8 @@ delaktivitas(idno);
         //showDialog();
 
         // Toast.makeText(this,"Load Data "+kode,Toast.LENGTH_LONG).show();
-        //String url = "http://kinipi.net/hrd/newtbmaster.php";
-        String url = "http://anugrahsoftware.xyz/andro/loadaktivitas.php";
+
+        String url = AppConfig.IP_SERVER+"andro/loadaktivitas.php";
         StringRequest postRequest = new StringRequest(Request.Method.POST, url,new Response.Listener<String>() {
 
             @Override
@@ -666,7 +666,7 @@ delaktivitas(idno);
 
 
 
-        String url = "http://anugrahsoftware.xyz/andro/saveactivity.php";
+        String url = AppConfig.IP_SERVER+"andro/saveactivity.php";
 
         pDialog.setMessage("Saving Data...");
 
