@@ -66,7 +66,7 @@ public class registerdevice0 extends AppCompatActivity {
         final String deviceid = MainActivity.unikid;
         final String nik=editnik.getText().toString();
 
-        String url = "http://anugrahsoftware.xyz/andro/checknik.php";
+        String url = AppConfig.IP_SERVER+"andro/checknik.php";
 
         pDialog.setMessage("Checking NIK...");
 
