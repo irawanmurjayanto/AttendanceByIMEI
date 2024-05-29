@@ -1,3 +1,4 @@
 # AttendanceByIMEI
 Attendance By Imei (Database MYSQL and PHP)
-![plot](./directory_1/directory_2/.../directory_n/plot.png)
+
+![alt text](https://github.com/irawanmurjayanto/AttendanceBYIMEI/blob/[branch]/image.jpg?raw=true)
