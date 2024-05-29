@@ -292,8 +292,8 @@ simpan.setOnClickListener(new View.OnClickListener() {
         //showDialog();
 
         // Toast.makeText(this,"Load Data "+kode,Toast.LENGTH_LONG).show();
-        //String url = "http://kinipi.net/hrd/newtbmaster.php";
-        String url = "http://anugrahsoftware.xyz/andro/loadaktivitasrpt.php";
+
+        String url = AppConfig.IP_SERVER+"andro/loadaktivitasrpt.php";
         StringRequest postRequest = new StringRequest(Request.Method.POST, url,new Response.Listener<String>() {
 
             @Override
@@ -493,7 +493,7 @@ simpan.setOnClickListener(new View.OnClickListener() {
 
 
 
-        String url = "http://anugrahsoftware.xyz/andro/saveactivity.php";
+        String url = AppConfig.IP_SERVER+"andro/saveactivity.php";
 
         pDialog.setMessage("Saving Data...");
 
