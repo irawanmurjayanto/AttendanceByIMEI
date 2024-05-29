@@ -82,7 +82,7 @@ public class registerdevice extends Activity {
         final String deviceid = imei;
         final String nik=editnik.getText().toString();
 
-        String url = "http://anugrahsoftware.xyz/andro/checknik.php";
+        String url = AppConfig.IP_SERVER+"andro/checknik.php";
 
         pDialog.setMessage("Checking NIK...");
 
