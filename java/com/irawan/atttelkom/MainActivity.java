@@ -810,7 +810,7 @@ startActivityForResult(a,555);
 
       //  Toast.makeText(getBaseContext(),"device id "+deviceid,Toast.LENGTH_LONG).show();
 
-        String url = "http://anugrahsoftware.xyz/andro/checkdevice.php";
+        String url = AppConfig.IP_SERVER+"andro/checkdevice.php";
 
         pDialog.setMessage("Checking DeviceID...");
 
@@ -1031,7 +1031,7 @@ startActivityForResult(a,555);
         final String deviceid = textdeviceid.getText().toString();
         //final String nik=editnik.getText().toString();
 
-        String url = "http://anugrahsoftware.xyz/andro/checkniknama.php";
+        String url = AppConfig.IP_SERVER+"andro/checkniknama.php";
 
         pDialog.setMessage("Checking NIK...");
 
@@ -1678,7 +1678,7 @@ startActivityForResult(a,555);
 
         // Toast.makeText(this,"Load Data "+kode,Toast.LENGTH_LONG).show();
         //String url = "http://kinipi.net/hrd/newtbmaster.php";
-        String url = "http://anugrahsoftware.xyz/andro/loadaktivitas.php";
+        String url = AppConfig.IP_SERVER+"andro/loadaktivitas.php";
         StringRequest postRequest = new StringRequest(Request.Method.POST, url,new Response.Listener<String>() {
 
             @Override
@@ -1801,10 +1801,10 @@ startActivityForResult(a,555);
             //  ImageView img_add = (ImageView) findViewById(R.id.photoabsen4);
 
 
-            //  img_add.setImageBitmap(getBitmapFromURL("http://kinipi.net/hrd/uploademp/11001keluar22112019.jpg"));
+            //  img_add.setImageBitmap(getBitmapFromURL(AppConfig.IP_SERVER+"hrd/uploademp/11001keluar22112019.jpg"));
 
         /*    ImageView bindImage = (ImageView)findViewById(R.id.photoabsen4);
-            String pathToFile = "http://kinipi.net/hrd/uploademp/11001keluar22112019.jpg";
+            String pathToFile = AppConfig.IP_SERVER+"hrd/uploademp/11001keluar22112019.jpg";
             DownloadImageWithURLTask downloadTask = new DownloadImageWithURLTask(bindImage);
             downloadTask.execute(pathToFile);*/
 
@@ -1822,14 +1822,14 @@ startActivityForResult(a,555);
                 objectbarangPI.setJudul(obj.getString("keterangan"));
                 objectbarangPI.setRemarks(obj.getString("dod"));
                 objectbarangPI.setTagstatus(obj.getInt("taskpersen"));
-                // String imageUri = "http://kinipi.net/hrd/uploademp/"+obj.getString("photo");
+                // String imageUri = AppConfig.IP_SERVER+"hrd/uploademp/"+obj.getString("photo");
                 //objectbarangAtt.setPhoto(imageUri);
                 //textSection.setText( obj.getString("section")+" / ");
                 // objectbarangAtt.setPhoto(imageUri);
 
 
            /*     ImageView bindImage = (ImageView)findViewById(R.id.loadimage);
-                String pathToFile = "http://kinipi.net/hrd/uploademp/11001keluar22112019.jpg";
+                String pathToFile = AppConfig.IP_SERVER+"hrd/uploademp/11001keluar22112019.jpg";
                 DownloadImageWithURLTask downloadTask = new DownloadImageWithURLTask(bindImage);
                 downloadTask.execute(pathToFile);*/
 
